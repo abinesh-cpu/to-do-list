@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo-list</h1>
+    <form action="../" method="POST" class="todo-form">
+        {% csrf_token %}
+        <textarea name="todoarea" id="" placeholder="enter the topic"></textarea>
+        <button type="submit">Add</button>
+    </form>
+    <div class="main">
+    <table>
+        {% for i in todos %}
+        <tr>
+            <td>{{i.date}}</td>
+            <td>{{i.sub}}</td>
+            <td><a href="">update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    </div>
+</body>
+</html>
