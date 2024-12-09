@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #dfbbbbec;
+    background-image: url(../static/images/narure1.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +10,10 @@ body {
 }
 
 .todo-container {
-    background-color: #448d9d;
+    background-color: rgba(239, 231, 231, 0.7);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     width: 400px;
     text-align: center;
 }
